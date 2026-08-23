@@ -13,7 +13,7 @@ public:
         int rightIndex = n-1;
         for(int j=k-1 ; j>=0 ;j--){
           leftsidesum = leftsidesum - cardPoints[j];
-          rightsidesum = rightsidesum + cardPoints[rightIndegix];
+          rightsidesum = rightsidesum + cardPoints[rightIndex];
           rightIndex--;
           sum = max(sum , leftsidesum + rightsidesum);
         }
